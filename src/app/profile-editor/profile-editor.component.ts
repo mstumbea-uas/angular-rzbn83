@@ -6,7 +6,7 @@ import { FormArray } from '@angular/forms';
 @Component({
   selector: 'app-profile-editor',
   templateUrl: './profile-editor.component.html',
-  styleUrls: ['./profile-editor.component.css']
+  styleUrls: ['./profile-editor.component.css'],
 })
 export class ProfileEditorComponent {
   profileForm = this.fb.group({
@@ -16,25 +16,23 @@ export class ProfileEditorComponent {
       street: [''],
       city: [''],
       state: [''],
-      zip: ['']
+      zip: [''],
     }),
-    aliases: this.fb.array([
-      this.fb.control('')
-    ])
+    aliases: this.fb.array([this.fb.control('')]),
   });
 
   get aliases() {
     return this.profileForm.get('aliases') as FormArray;
   }
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder) {}
 
   updateProfile() {
     this.profileForm.patchValue({
-      firstName: 'Nancy',
+      firstName: '',
       address: {
-        street: '123 Drew Street'
-      }
+        street: '',
+      },
     });
   }
 
@@ -47,7 +45,6 @@ export class ProfileEditorComponent {
     console.warn(this.profileForm.value);
   }
 }
-
 
 /*
 Copyright Google LLC. All Rights Reserved.

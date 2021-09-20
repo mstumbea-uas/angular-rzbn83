@@ -1,14 +1,57 @@
-<h1>Reactive Forms</h1>
+<table width="1000px">
+<tbody><tr>
+  <td align="center"><img src="assets/images/TCE-01.png" width="1000px"></td>
+</tr>
+</tbody></table>
 
-<nav>
-  <a (click)="toggleEditor('name')">Name Editor</a>
-  <a (click)="toggleEditor('profile')">Profile Editor</a>
-</nav>
+<section id="TripDetails">
+<table width="1000px">
+  <tbody><tr>
+    <td colspan="6"><hr></td>
+  </tr>
+  <tr>
+    <td width="12%"><b>Prepared for:</b></td>
+    <td width="26%"><span class="106946479"></span></td>
+    <td width="12%"><b>Reg No:</b></td>
+    <td width="22%"><span class="106946481"></span></td>
+    <td width="12%"><b>TCE Number:</b></td>
+    <td width="16%">THOU21-<span id="submissionID"></span></td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+    <td><b>AC Type:</b></td>
+    <td><span class="106946482"></span></td>
+    <td><b>Date Prepared:</b></td>
+    <td><span class="106946477"></span></td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+    <td><b>MTOW:</b></td>
+    <td><span class="106946483"></span> lb (<span class="106946484"></span> tons)</td>
+    <td><b>Valid Until:</b></td>
+    <td><span class="106946478"></span></td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+    <td><b>Type of Flight:</b></td>
+    <td><span class="106946480"></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6"><hr></td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+    <td><b>Trip Start Date:</b></td>
+    <td><span class="106946485"></span></td>
+    <td><b>Trip End Date:</b></td>
+    <td><span class="106946486"></span></td>
+  </tr>
+  </tbody></table>
+</section>
 
-<app-name-editor *ngIf="showNameEditor"></app-name-editor>
-
-<app-profile-editor *ngIf="showProfileEditor"></app-profile-editor>
-
+<app-profile-editor></app-profile-editor>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

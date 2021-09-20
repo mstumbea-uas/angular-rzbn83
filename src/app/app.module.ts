@@ -3,25 +3,19 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { NameEditorComponent } from './name-editor/name-editor.component';
 import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NameEditorComponent,
-    ProfileEditorComponent
-  ],
+  declarations: [AppComponent, ProfileEditorComponent],
   imports: [
     BrowserModule,
     // other imports ...
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-
+export class AppModule {}
 
 /*
 Copyright Google LLC. All Rights Reserved.

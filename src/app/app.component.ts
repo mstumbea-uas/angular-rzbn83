@@ -1,18 +1,14 @@
 import { Component } from '@angular/core';
 
-export type EditorType = 'name' | 'profile';
+export type EditorType = 'profile';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  editor: EditorType = 'name';
-
-  get showNameEditor() {
-    return this.editor === 'name';
-  }
+  editor: EditorType = 'profile';
 
   get showProfileEditor() {
     return this.editor === 'profile';
@@ -22,7 +18,6 @@ export class AppComponent {
     this.editor = type;
   }
 }
-
 
 /*
 Copyright Google LLC. All Rights Reserved.
